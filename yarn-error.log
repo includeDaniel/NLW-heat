@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\danie\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add prisma =D
+  C:\Program Files\nodejs\node.exe C:\Users\danie\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @types/axios-D
 
 PATH: 
   C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\xampp\php;C:\composer;C:\Program Files\MongoDB\Server\4.4\bin;C:\Program Files\nodejs\;C:\Users\danie\AppData\Local\Microsoft\WindowsApps;;C:\Users\danie\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\danie\AppData\Roaming\Composer\vendor\bin;C:\Users\danie\AppData\Roaming\npm
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/=D: Not found
+  Error: https://registry.yarnpkg.com/@types%2faxios-D: Not found
       at Request.params.callback [as _callback] (C:\Users\danie\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
       at Request.self.callback (C:\Users\danie\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
       at Request.emit (events.js:375:28)
@@ -38,6 +38,8 @@ npm manifest:
       "dev": "ts-node-dev src/app.ts"
     },
     "dependencies": {
+      "axios": "^0.23.0",
+      "dotenv": "^10.0.0",
       "express": "^4.17.1"
     },
     "devDependencies": {
@@ -152,6 +154,13 @@ Lockfile:
     version "1.1.1"
     resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
     integrity sha1-ml9pkFGx5wczKPKgCJaLZOopVdI=
+  
+  axios@^0.23.0:
+    version "0.23.0"
+    resolved "https://registry.yarnpkg.com/axios/-/axios-0.23.0.tgz#b0fa5d0948a8d1d75e3d5635238b6c4625b05149"
+    integrity sha512-NmvAE4i0YAv5cKq8zlDoPd1VLKAqX5oLuZKs8xkJa4qi6RGn0uhCYFjWtHHC9EM/MwOwYWOs53W+V0aqEXq1sg==
+    dependencies:
+      follow-redirects "^1.14.4"
   
   balanced-match@^1.0.0:
     version "1.0.2"
@@ -273,6 +282,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/diff/-/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
     integrity sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==
   
+  dotenv@^10.0.0:
+    version "10.0.0"
+    resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-10.0.0.tgz#3d4227b8fb95f81096cdd2b66653fb2c7085ba81"
+    integrity sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==
+  
   dynamic-dedupe@^0.3.0:
     version "0.3.0"
     resolved "https://registry.yarnpkg.com/dynamic-dedupe/-/dynamic-dedupe-0.3.0.tgz#06e44c223f5e4e94d78ef9db23a6515ce2f962a1"
@@ -355,6 +369,11 @@ Lockfile:
       parseurl "~1.3.3"
       statuses "~1.5.0"
       unpipe "~1.0.0"
+  
+  follow-redirects@^1.14.4:
+    version "1.14.4"
+    resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.4.tgz#838fdf48a8bbdd79e52ee51fb1c94e3ed98b9379"
+    integrity sha512-zwGkiSXC1MUJG/qmeIFH2HBJx9u0V46QGUe3YR1fXG8bXQxq7fLj0RjLZQ5nubr9qNJUZrH+xUcwXEoXNpfS+g==
   
   forwarded@0.2.0:
     version "0.2.0"
