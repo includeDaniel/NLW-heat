@@ -5,6 +5,9 @@
   "repository": "https://github.com/includeDaniel/NLW-heat.git",
   "author": "Daniel Nunes <danielzcomputacao@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev src/app.ts"
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
