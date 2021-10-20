@@ -7,7 +7,7 @@ class ProfileUserService {
         id: user_id,
       },
     });
-    return user_id;
+    return user;
   }
 }
 export { ProfileUserService };
